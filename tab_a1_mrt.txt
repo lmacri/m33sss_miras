@@ -11,7 +11,7 @@ Byte-by-byte Description of file: tab_a1_mrt.txt
   28- 36 F9.4   deg   Dec    Declination (J2000.0)
   38- 43 F6.3   mag   i      i-band magnitude
   45- 49 F5.3   mag   e_i    Uncertainty in i-band magnitude
-  51- 56 F6.3   mag   r      i-band magnitude		    
+  51- 56 F6.3   mag   r      r-band magnitude		    
   58- 62 F5.3   mag   e_r    Uncertainty in r-band magnitude
   64- 69 F6.3   mag   z      z-band magnitude		    
   71- 75 F5.3   mag   e_z    Uncertainty in z-band magnitude
