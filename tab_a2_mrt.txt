@@ -1,0 +1,101 @@
+Title: The M33 Synoptic Stellar Survey. III. Miras and LPVs in griJHKs
+Authors: Konchady T., Macri L.M., Yan, X., Huang, J.
+Table: Derived properties and associated uncertainties of all LPVs detected in
+       our analysis
+================================================================================
+Byte-by-byte Description of file: tab_a2_mrt.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units Label   Explanations
+--------------------------------------------------------------------------------
+   1- 16 A16    ---   ID      Source ID
+  18- 26 F9.4   deg   RA      Right Ascension (J2000.0)
+  28- 36 F9.4   deg   Dec     Declination (J2000.0)
+  38- 44 F7.2   d     P       Period
+  46- 51 F6.3   mag   i       i-band magnitude		    
+  53- 58 F6.3   mag   J       J-band magnitude		    
+  60- 65 F6.3   mag   H       H-band magnitude		    
+  67- 72 F6.3   mag   Ks      Ks-band magnitude		    
+  74- 79 F6.3   mag   r       r-band magnitude		    
+  81- 86 F6.3   mag   g       g-band magnitude		    
+  88- 92 F5.3   mag   A_i     Amplitude of i-band light curve
+  94- 98 F5.3   mag   A_J     Amplitude of J-band light curve
+ 100-104 F5.3   mag   A_r     Amplitude of r-band light curve
+ 106-110 F5.3   mag   A_g     Amplitude of g-band light curve
+ 112-117 F6.3   rad   phi_i   Phase of i-band light curve
+ 119-124 F6.3   rad   phi_J   Phase of J-band light curve
+ 126-130 F5.3   d     e(P)    Uncertainty in period
+ 132-136 F5.3   mag   e(i)    Uncertainty in i-band magnitude
+ 138-142 F5.3   mag   e(J)    Uncertainty in J-band magnitude
+ 144-148 F5.3   mag   e(H)    Uncertainty in H-band magnitude
+ 150-154 F5.3   mag   e(Ks)   Uncertainty in Ks-band magnitude
+ 156-160 F5.3   mag   e(r)    Uncertainty in r-band magnitude
+ 162-166 F5.3   mag   e(g)    Uncertainty in g-band magnitude
+ 168-172 F5.3   mag   e(A_i)  Uncertainty in amplitude of i-band light curve
+ 174-178 F5.3   mag   e(A_J)  Uncertainty in amplitude of J-band light curve
+ 180-184 F5.3   mag   e(A_r)  Uncertainty in amplitude of r-band light curve
+ 186-190 F5.3   mag   e(A_g)  Uncertainty in amplitude of g-band light curve
+ 192-196 F5.3   rad   e(ph_i) Uncertainty in phase of i-band light curve
+ 198-202 F5.3   rad   e(ph_J) Uncertainty in phase of J-band light curve
+ 204-205 A2     ---   Type    Variable type or rejection code (1)
+ 207-208 A2     ---   Class   Pulsation class (2)
+ 210-215 F6.3   mag   W_JK    Wesenheit index J-Ks
+ 217-222 F6.3   mag   W_JH    Wesenheit index J-H
+ 224-228 F5.3   mag   e(W_JK) Uncertainty in Wesenheit index J-Ks
+ 230-234 F5.3   mag   e(W_JH) Uncertainty in Wesenheit index J-H
+ 236-241 F6.3   ---   slgr    Score for Logistic Regression classifier (3)
+ 243-248 F6.3   ---   sraf    Score for Random Forest classifier (3)
+ 250-255 F6.3   ---   sLDA    Score for Linear Discriminant Analysis cls. (3)
+ 257-262 F6.3   ---   sQDA    Score for Quadratic Discriminant Analysis cls. (3)
+ 264-269 F6.3   ---   sSVM    Score for kernel support vector machine cls. (3)
+ 271-276 F6.3   ---   sBSVM   Score for bagging support vector machine cls. (3)
+ 278-279 I2     ---   mlgr    Flag for Logistic Regression classifier (4)
+ 281-282 I2     ---   mraf    Flag for Random Forest classifier (4)
+ 284-285 I2     ---   mLDA    Flag for Linear Discriminant Analysis cls. (4)
+ 287-288 I2     ---   mQDA    Flag for Quadratic Discriminant Analysis cls. (4)
+ 290-291 I2     ---   mSVM    Flag for kernel support vector machine cls. (4)
+ 293-294 I2     ---   mBSVM   Flag for bagging support vector machine cls. (4)
+ 296     I1     ---   mT      Sum of machine-learning classifier flags (5)
+ 298     A1     ---   Viz     Result of visual inspection (6)
+ 300-376 A76    ---   fits    Fits in which this variable was used (7)
+--------------------------------------------------------------------------------
+Note (1): CO, carbor first-overtone; CU, Carbon fundamental-mode; OO, Oxygen
+          first-overtone; OU, Oxygen fundamental-mode; NO, unclassified first-
+	  overtone; NU, unclassified fundamental-mode; C[JHK], rejected due to
+	  large crowding in J, H or K_S; R[JHK], rejected as outliers in J, H or
+	  K_S PLRs; JH/JK, rejected as outliers in Wesenheit PLRs; LP, rejected
+	  due to best-fit period being at limit of grid search.
+Note (2): FU: fundamental mode; FO: first-overtone; FA: faint
+Note (3): -9.999 denotes no classifier was run on this variable, as it was
+          rejected prior to that analysis step
+Note (4): 0=did not reach ROC threshold; 1=reached ROC threshold;
+          -1=no classifier was run on this variable, as it was rejected prior to
+	  that analysis step
+Note (5): 0=did not reach ROC threshold for any classifier; 1/2: in at least one
+          bronze sample; 3/4/5: silver sample; 6: gold sample
+Note (6): Y=high-confidence; P=medium confidence; N=low confidence; Z=no visual
+          inspection was done on this variable, as it was rejected prior to this
+	  analysis step
+Note (7): l=linear; q=quadratic; JK=Wesenheit J-Ks for C or O; JKN=Wesenheit
+          J-Ks for any type; JH=Wesenheit J-H for C or O; JHN=Wesenheit J-H for
+	  any type; K=Ks for C or O; KN=Ks for any type; H=H for C or O; HN=H
+	  for any type; J=J for C or O; JN=J for any type; NA=not used in any
+--------------------------------------------------------------------------------
+01322479+3047175 23.103285 30.788191  389.05 20.348 99.999 18.074 99.999 21.936 23.175 0.766 0.105 0.316 0.326  0.157  0.165  0.00 0.004 0.000 0.038 0.000 0.008 0.005 0.000 0.000 0.016 0.000 0.001 0.071 RH FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322531+3048327 23.105476 30.809076  296.18 22.817 99.999 17.962 99.999 99.999 99.999 0.648 0.548 0.000 0.000 -0.160 -0.124  0.00 0.020 0.000 0.050 0.000 0.000 0.000 0.032 0.068 0.000 0.000 0.006 0.000 NU FU 99.999 99.999 9.999 9.999  0.995  0.948  0.998  1.000  0.986  0.995  1  1  1  1  1  1 6 Y lH lHN qH qHN 
+01322533+3036126 23.105537 30.603506 1071.52 21.644 99.999 17.339 99.999 22.958 99.999 0.194 0.204 0.266 0.000  0.154  0.341  0.00 0.008 0.000 0.059 0.000 0.011 0.000 0.012 0.073 0.000 0.000 0.007 0.045 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322561+3041037 23.106689 30.684370 1071.52 19.098 99.999 16.683 99.999 20.624 22.156 1.016 0.071 0.085 0.062  0.046  0.228  0.00 0.004 0.000 0.032 0.000 0.009 0.004 0.000 0.048 0.019 0.000 0.001 0.045 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322583+3047503 23.107637 30.797293 1071.52 20.501 99.999 18.077 99.999 22.071 23.478 0.935 0.142 0.452 0.508  0.023 -0.208  0.00 0.004 0.000 0.183 0.000 0.005 0.007 0.000 0.000 0.000 0.000 0.001 0.067 CH FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322657+3048153 23.110703 30.804241 1071.52 20.314 99.999 18.195 99.999 21.208 22.474 0.985 0.047 0.042 0.053  0.041  0.214  0.00 0.004 0.000 0.122 0.000 0.004 0.004 0.000 0.168 0.000 0.000 0.001 0.249 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322711+3047449 23.112978 30.795813 1071.52 20.232 99.999 18.004 99.999 21.571 22.568 0.941 0.056 0.044 0.079  0.045 -0.172  0.00 0.004 0.000 0.052 0.000 0.004 0.008 0.000 0.000 0.000 0.017 0.001 0.161 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322712+3035219 23.113003 30.589403  538.26 21.612 99.999 18.030 99.999 22.679 99.999 0.222 0.110 0.263 0.000 -0.486 -0.500  0.00 0.007 0.000 0.043 0.000 0.008 0.000 0.007 0.000 0.007 0.000 0.012 0.126 RH FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322713+3047443 23.113022 30.795649 1071.52 20.036 99.999 17.320 99.999 21.413 99.999 1.084 0.066 0.234 0.000  0.040  0.500  0.00 0.004 0.000 0.022 0.000 0.004 0.000 0.000 0.000 0.000 0.000 0.001 0.000 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322739+3047313 23.114136 30.792025 1071.52 20.660 99.999 17.660 99.999 21.816 24.058 0.824 0.149 0.327 0.581  0.038  0.153  0.00 0.004 0.000 0.028 0.000 0.005 0.026 0.000 0.000 0.000 0.063 0.001 0.052 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322748+3046436 23.114492 30.778770  165.32 20.974 99.999 18.418 99.999 21.923 23.145 0.297 0.265 0.632 0.484  0.500 -0.238  0.00 0.004 0.000 0.060 0.000 0.005 0.004 0.000 0.000 0.000 0.000 0.002 0.037 NU FU 99.999 99.999 9.999 9.999  0.880  0.514  0.976  0.949  0.910  0.988  1  1  1  1  1  1 6 Y NA
+01322761+3040215 23.115034 30.672651 1071.52 20.505 99.999 18.249 99.999 21.734 99.999 0.933 0.040 0.041 0.000  0.036  0.144  0.00 0.004 0.000 0.050 0.000 0.004 0.000 0.000 0.000 0.000 0.000 0.001 0.361 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322793+3039553 23.116392 30.665359  117.82 21.206 99.999 17.756 99.999 23.215 99.999 0.155 0.092 0.257 0.000  0.046 -0.195  0.00 0.005 0.000 0.023 0.000 0.012 0.000 0.000 0.000 0.026 0.000 0.006 0.057 NO FO 99.999 99.999 9.999 9.999  0.023  0.000  0.024  0.001  0.001  0.060  0  0  0  0  0  0 0 Z NA
+01322798+3036126 23.116587 30.603506  341.51 21.308 99.999 17.735 99.999 22.708 99.999 0.343 0.708 0.501 0.000  0.254 -0.279  0.00 0.009 0.000 0.052 0.000 0.009 0.000 0.017 0.026 0.016 0.000 0.004 0.024 NU FU 99.999 99.999 9.999 9.999  0.903  0.744  0.984  0.959  0.959  0.993  1  1  1  1  1  1 6 Y NA
+01322850+3051082 23.118748 30.852291 1071.52 18.847 99.999 17.108 99.999 19.627 99.999 1.258 0.036 0.062 0.000  0.035  0.226  0.00 0.007 0.000 0.062 0.000 0.009 0.000 0.000 0.000 0.000 0.000 0.001 0.410 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322860+3040366 23.119173 30.676830 1071.52 20.346 99.999 17.381 99.999 21.782 99.999 0.791 0.110 0.319 0.000  0.068  0.500  0.00 0.004 0.000 0.075 0.000 0.005 0.000 0.000 0.000 0.000 0.000 0.001 0.000 LP FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322861+3040132 23.119205 30.670330  358.71 21.430 99.999 18.535 99.999 23.194 99.999 0.496 0.208 0.705 0.000  0.070 -0.459  0.00 0.004 0.000 0.046 0.000 0.016 0.000 0.000 0.000 0.000 0.000 0.002 0.045 RH FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
+01322879+3049434 23.119947 30.828728  365.78 21.066 99.999 17.036 99.999 22.939 99.999 0.813 0.125 0.453 0.000  0.068  0.156  0.00 0.004 0.000 0.016 0.000 0.008 0.000 0.000 0.000 0.000 0.000 0.001 0.000 NU FU 99.999 99.999 9.999 9.999  0.016  0.278  0.017  0.000  0.688  0.917  0  1  0  0  0  0 1 P NA
+01322888+3040549 23.120314 30.681911  393.00 20.617 99.999 17.875 99.999 22.094 23.307 0.417 0.163 0.344 0.605  0.111  0.344  0.00 0.004 0.000 0.045 0.000 0.005 0.009 0.000 0.000 0.000 0.000 0.002 0.056 RH FA 99.999 99.999 9.999 9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -9.999 -1 -1 -1 -1 -1 -1 0 Z NA
